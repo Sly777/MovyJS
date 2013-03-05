@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovyJS - v.1.0.0 . Example 4</title>
+</head>
+<body>
+<h1>MovyJS - v.1.0.0 . Example 4</h1>
+<h3>by <a href="http://ilkerguller.com" target="_blank">Ilker Guller</a></h3>
+
+<h5>Custom Move Example</h5>
+
+<pre>
+    $(document).ready(function (){
+        $('.mouseArea').movyjs({
+            moveType: "custom",
+            customMoveType: ["left", "top", "right", "bottom"],
+            onEveryTick: function (count){
+                console.log(count + ".move completed.");
+            },
+            onComplete: function (){
+                alert("custom move completed");
+            }
+        });
+    });
+</pre><br>
+
+<div class="mouseArea" style="width: 500px; height: 500px; background: darkgray;"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script src="../source/movyjs.js"></script>
+<script>
+    $(document).ready(function (){
+        $('.mouseArea').movyjs({
+            moveType: "custom",
+            customMoveType: ["left", "top", "right", "bottom"],
+            onEveryTick: function (count){
+                console.log(count + ".move completed.");
+            },
+            onComplete: function (){
+                alert("custom move completed");
+            }
+        });
+    });
+</script>
+</body>
+</html>

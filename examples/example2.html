@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovyJS - v.1.0.0 . Example 2</title>
+</head>
+<body>
+<h1>MovyJS - v.1.0.0 . Example 2</h1>
+<h3>by <a href="http://ilkerguller.com" target="_blank">Ilker Guller</a></h3>
+
+<h5>MoveType Example</h5>
+
+<pre>
+    $(document).ready(function (){
+        $('.mouseArea').movyjs({
+            moveType: "triangle",
+            onComplete: function (){
+                alert("triangle completed");
+            }
+        });
+    });
+</pre><br>
+
+<div class="mouseArea" style="width: 500px; height: 500px; background: darkgray;"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script src="../source/movyjs.js"></script>
+<script>
+    $(document).ready(function (){
+        $('.mouseArea').movyjs({
+            moveType: "triangle",
+            onComplete: function (){
+                alert("triangle completed");
+            }
+        });
+    });
+</script>
+</body>
+</html>
